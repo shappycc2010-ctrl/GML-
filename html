@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GML Frontend</title>
+</head>
+<body>
+  <h1>GML Frontend Connected</h1>
+
+  <script>
+    fetch("/api/plans")
+      .then(res => res.json())
+      .then(data => console.log(data));
+  </script>
+</body>
+</html>
